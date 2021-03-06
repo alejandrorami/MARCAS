@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GUIA HTML Y CSS</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+        <h1 id="titulo">GUIA HTML Y CSS</h1>
+    <div id="menu">
+        <ul >
+            <li><a href="guiaHTML.html">HTML</a></li>
+            <li><a href="guiacss.html">CSS</a></li>
+
+        </ul>
+</div>
+        <div class="noticia">
+		<ul>
+			<h2>INDICE</h2>
+   		  <li><a href="#formato">1.- FORMATO</a></li>
+		  <li><a href="#titulo">2.- TITULO</a></li>
+			<li><a href="#metadatos">3.-METADATOS </a></li>
+			<li><a href="#titulos">4.- TITULOS</a></li>
+			<li><a href="#agrupacion">5.- AGRUPACION</a></li>
+			<li><a href="#elementos">6.- ELEMENTOS SEMANTICOS DE TEXTO</a></li>
+			<li><a href="#imagenes">7.- IMAGENES</a></li>
+			<li><a href="#simbolos">8.- SIMBOLOS ESPECIALES</a></li>
+			<li><a href="#tablas">9.- TABLAS</a></li>
+			<li><a href="#formularios">10.- FORMULARIOS</a></li>
+		</ul>
+       
+    </div>
+	<div class="noticia">
+		<ul>
+			<h3 id=formato>FORMATO</h3>
+    		<li><strong>Tipo de documento: </strong> </li>
+    		<ol>&lt;!doctype html&gt;</ol>
+			<li><strong>Formato de etiqueta:</strong></li>
+			<ol>&lt;elemento&gt;</ol>
+			<li><strong>Etiqueta de cierre vs. Elemento vacío</strong></li>
+			<ol>&lt;/elemento&gt;</ol>
+			<li><strong>Atributos:</strong></li>
+			<ol>&lt;elto atributo=“valor”&gt;&lt;/elto&gt;</ol>
+		</ul>
+    </div>
+	
+        <div class="noticia">
+		  <h3 id="tituloo">TITULO</h3>
+		  <p>&lt;!doctype html&gt;</p>
+		  <p> &lt;html lang=“es”&gt; </p>
+			<p>&lt;head&gt;</p>
+		<p><strong>&lt;title&gt;Mi primer documento HTML&lt;/title&gt;</strong></p> 
+			<p>&lt;/head&gt; &lt;body&gt; Este es el texto de mi primer documento. &lt;/body&gt; </p>
+				<p>&lt;/html&gt;</p>
+			<p>Este es el titulo del documento, que parecera en la ventana del navegador</p>
+    </div>
+	
+<div class="noticia">
+  <h3 id=metadatos>METADATOS</h3>
+  <p>&lt;!doctype html&gt;</p>
+  <p> &lt;html lang=“es”&gt;</p>
+  <p> &lt;head&gt;</p>
+  <p> &lt;title&gt;Mi primer documento HTML&lt;/title&gt;</p>
+  <p> &lt;<strong>meta charset=“utf-8”&gt;</strong></p>
+  <p> <strong> &lt;meta name=“author” content=“Antonio”&gt;</strong></p>
+  <p> &lt;/head&gt; </p>
+  <p>&lt;body&gt; Este es el texto de mi primer documento. &lt;/body&gt;</p>
+	<p> &lt;/html&gt; </p>
+	<p>Estos son los metadatos, y sirve para dar informacion del documente, como la codificacion o el nombre del creador</p>
+</div>
+	
+<div class="noticia">
+  <h3 id=titulos>TITULOS</h3>
+  <p>HEADING: H</p>
+  <p> &lt;h1&gt;Texto de título de primer nivel&lt;/h1&gt; </p>
+  <p>&lt;h2&gt;Texto de título de segundo nivel&lt;/h2&gt;</p>
+  <p> &lt;h6&gt;Texto de título de sexto nivel&lt;/h6&gt;</p>
+	<p>Puede haber indefinidamente, y sirve para crear un titulo, se pone automaticamente en un tamaño mayor y en negrita</p>
+</div>
+	
+        <div class="noticia">
+		<ul>
+			<h3 id=agrupacion>AGRUPACION</h3>
+   		  <li><strong>Párrafo: P</strong></li>
+			<p><strong>&lt;p&gt;</strong>Este texto pertenece a un párrafo.<strong>&lt;/p&gt;</strong></p>
+			<p><strong>&lt;p&gt;</strong>Pero éste es del párrafo siguiente<strong>&lt;/p&gt;</strong></p>
+			<li><strong>Texto preformateado: PRE</strong></li>
+		  <p><strong>&lt;pre&gt;</strong></p>
+		  <p> Este texto aparecerá</p>
+		  <p>  escrito en el navegador con este mismo formato</p>
+		  <p> utilizando un tipo de letra monoespaciada.</p>
+<p> <strong> &lt;/pre&gt; </strong></p>
+			<p>Esto hace que aparezca unos saltos de linea al inicio y al final del texto</p>
+			<li><strong>Listas: LI</strong></li>
+			<p>Listas desordenadas: <strong>ul</strong></p>
+			<p>Listas ordenadas: <strong>ol</strong></p>
+			<p>Definition list: <strong>dl</strong></p>
+			<p>Este elemento sirve para crear una lista, ya sea desordenada o ordenada</p>
+			<li><strong>Linea horizontal: HR</strong></li>
+		  <p>&lt;p&gt;La siguiente línea horizontal divide temáticamente este párrafo del siguiente&lt;/p&gt;</p>
+		  <p> <strong> &lt;hr&gt; </strong></p>
+			<p>&lt;p&gt;Este segundo párrafo puede pertenecer, por ejemplo, a un cambio de escena dentro de un mismo capítulo de una novela.&lt;/p&gt;</p>
+			<p>Este elemento sirve para espaciar dos parrafos con una linea horizontal, se podria usar para novelas como bien dice el ejemplo</p>
+        </ul>
+			
+       
+    </div>
+
+        <div class="noticia">
+		<ul>
+			<h3 id=elementos>Elementos semánticos de texto</h3>
+			<li><strong>Resaltado:</strong></li>
+			<p><strong>Italic: I</strong>- Bastardilla</p>
+			<p>&lt;p&gt;Este párrafo contiene una palabra en cursiva en su interior: la escribimos con el símbolo de <strong>&lt;i&gt;itálica&lt;/i&gt;</strong>.&lt;/p&gt;</p>
+   		  <p><strong>Bold: B</strong>- Negrita</p>
+			<p>&lt;p&gt;En este, sin embargo, hay una palabra que aparece en <strong>&lt;b&gt;negrita&lt;/b&gt;.</strong>&lt;/p&gt;</p>
+			<p>Underlined: U- Subrayada</p>
+		  <p>&lt;p&gt;Y la palabra <strong>&lt;u&gt;subrayada&lt;/u&gt;</strong> es la que podemos ver en este párrafo final.&lt;/p&gt;</p>
+		  <p><strong>STRESS EMPHASIS: EM --</strong>;Pone énfasis o recalca una parte del texto</p>
+			<p><strong>STRONG</strong>--Parte importante, seria o urgente</p>
+			<p><strong>SMALL</strong>--Representa la “letra pequeña” (de un contrato...)</p>
+			<p><strong>S</strong>--Representa contenido irrelevante u obsoleto</p>
+			<li><strong>Salto de linea</strong></li>
+			<p>BREAK: <strong>BR</strong></p>
+			<p>WORD BREAK:<strong>WBR</strong></p>
+		  <p>&lt;p&gt;Este párrafo continene un <strong>&lt;br&gt; </strong> </p>
+			<p>salto de línea&lt;/p&gt;</p>
+			<li><strong>Hiperenlace:</strong></li>
+			<p>Anchor:<strong> A</strong></p>
+			<p>Enlace a URL: <strong>href</strong></p>
+			<p>Esto indica el lugar en el que hay un enlace</p>
+			<p>Este texto contiene un enlace a la página de <strong>&lt;a href=“http://www.google.com”&gt;Google&lt;/a&gt;</strong> , la empresa de la gran G.</p>
+			<p>Absoluto: http://sitio/pagina.html</p>
+			<p>Relativo:</p>
+			<p>--Mismo directorio-pagina.html</p>
+			<p>--Subdirectorio-Subdirectorio/pagina.html</p>
+			<p>--Directorio anterior-../pagina.html</p>
+			<li><strong>Hiperenlace interno:</strong></li>
+			<p>--Identificador de elemento</p>
+			<p>&lt;elto id=eltoX&gt;Elemento X&lt;/elto&gt;</p>
+			<p>--Referencia a elemento</p>
+			<p>&lt;a href=#eltoX&gt;Elemento X&lt;/a&gt;</p>
+			<p>Principio del documento</p>
+			<p>#top</p>
+			<li><strong>Hiperenlace general:</strong></li>
+			<p>Referencia desde otro documento</p>
+			<p>Pero, por supuesto, también podría acceder a un &lt;a href=“URL#identificador”&gt;lugar&lt;/a&gt; concreto de otro documento diferente.</p>
+			<p>Debo indicar cuál es la URL del documento y concatenar a la misma el identificador de ese lugar.</p>
+			<li><strong>Atributos del hiperenlace(usando href)</strong></li>
+			<p>-Download</p>
+			<p>-Target</p>
+			<p>-Otros</p>
+			
+        </ul>
+       
+</div>
+        <div class="noticia">
+		<ul>
+			<h3 id= imagenes>IMAGENES</h3>
+			<li>Origen (SouRCe): <strong>src</strong></li>
+			<li>Ancho:<strong> width</strong></li>
+			<li>Alto:<strong> height</strong></li>
+			<li>Texto alternativo (ALTernative text): <strong>alt</strong></li>
+			<p>&lt;img src=“foto.jpg” width=200 height=150 alt=“Mi foto”&gt;</p>
+			<h3>TIPOS DE IMAGENES</h3>
+			<li>Bimap estáticos (con y sin perdida)</li>
+			<p>-PNG, GIF Y JPG</p>
+			<li>Documentos vectoriales</li>
+			<p>-SVG</p>
+			<li>Animados</li>
+			<p>-APNG,GIF</p>
+			<li>Otros</li>
+			<p>-PDF,MNG</p>
+			<h3>Mapas de imagen</h3>
+		  <p>&lt;img usemap=“#mapa”&gt;</p>
+		  <p> &lt;map name=“mapa”&gt;</p>
+			<p> &lt;area&gt;</p>
+			<p>-shape:&nbsp;default, rect, circle, poly</p>
+			<p>-coords:&nbsp;coordenadas separadas por comas</p>
+			<p>-href: URL asociada - nohref</p>
+			<p>-alt:&nbsp;texto alternativo (obligatorio si href)</p>
+			<p>-download</p>
+			<p>-target</p>
+        </ul>
+       
+</div>
+       <div class="noticia">
+		<ul>
+			<h3 id=simbolos>SIMBOLOS ESPECIALES</h3>
+			<li><strong>Formato:</strong>&amp; nombre_del_símbolo ;</li>
+			<li><strong>Espacio en blanco:&nbsp;</strong>Non-Breaking Space: &nbsp;</li>
+			<li>Eñe: &amp;ntilde; &amp;Ntilde;</li>
+			<li>Acento agudo: &amp;aacute; &amp;Aacute;&nbsp;</li>
+   		  
+		</ul>
+       
+</div>
+	<div class="noticia">
+		<ul>
+			<h3 id=tablas>TABLAS</h3>
+		  <p>&lt;table&gt;</p>
+		  <p> Table Row &lt;tr&gt; </p>
+		  <p>Table Data &lt;td&gt;</p>
+		  <p> &lt;td&gt; .....</p>
+		  <p> &lt;tr&gt; .... </p>
+			<p>Table Header &lt;th&gt; </p>
+		  <li>Encabezado de tabla:&lt;thead&gt;</li>
+			<li>Cuerpo de tabla: <strong>&lt;tbody&gt; </strong></li>
+				<li>Sumario de tabla:<strong>&lt;tfoot&gt;&nbsp;</strong></li>
+			<li>Leyenda<strong>&lt;caption&gt;&nbsp;</strong> </li>
+        </ul>
+       
+</div>
+	<div class="noticia">
+		<ul>
+			<h3 id=formularios>FORMULARIOS</h3>
+			<p>&nbsp;</p>
+	  <p>&lt;<strong>form</strong> action=http://somesite.com/prog/adduser method=post&gt; </p>
+	  <p>&lt;p&gt; &lt;label for=nombre&gt;Nombre: &lt;/label&gt;</p>
+	  <p> &lt;input type=text id=nombre name=nombre&gt;&lt;br&gt; </p>
+	  <p>&lt;label for=apellido&gt;Apellido: &lt;/label&gt;</p>
+      <p> &lt;input type=text id=apellido name=apellido&gt;&lt;br&gt;</p>
+      <p> &lt;label&gt;&lt;input type=email name=email&gt;E-mail: &lt;/label&gt;&lt;br&gt;</p>
+      <p> &lt;input type=radio name=sexo value=hombre&gt;hombre&lt;br&gt;</p>
+      <p> &lt;input type=radio name=sexo value=mujer&gt;mujer&lt;br&gt;</p>
+      <p> &lt;input type=submit value=Enviar&gt; &lt;input type=reset&gt; &lt;/p&gt;</p>
+      <p><strong>&lt;/form&gt; </strong> </p>
+<p>&nbsp;</p>
+  <li>FORM </li>
+  <p>– action</p>
+  <p> – method (get  post)</p>
+  <p> – enctype (application/x-www-form-urlencoded  multipart/form-data) </p>
+  <p>– accept-charset </p>
+<p>&nbsp;</p>
+  <li>LABEL </li>
+  <p>– for </p>
+  <p>&nbsp;</p>
+  <p>&lt;label for=nombre&gt;Nombre: &lt;/label&gt;</p>
+  <p>&lt;input type=text id=nombre name=nombre&gt;&lt;br&gt;</p>
+  <p>&lt;label&gt;</p>
+  <p>&lt;input type=email name=email&gt;E-mail </p>
+			<p>&lt;</p>  <p>&lt;/label&gt; </p>
+    <li> INPUT </li>
+  <p>– type</p>
+  <p> – name </p>
+  <p>– value </p>
+  <p>– required</p>
+  <p> – size (=20)</p>	
+	<li><strong>Botón de envío:</strong></li>
+  <p> <strong> type=submit</strong></p>
+  <p> &lt;form id=ejemplo action=este.html&gt; </p>
+  <p>&lt;p&gt;Name: &lt;input type=text name=Nombre&gt;&lt;/p&gt; </p>
+  <p>&lt;p&gt;Email: &lt;input type=text name=Email&gt;&lt;/p&gt; </p>
+  <p>&lt;p&gt;&lt;input type=submit name=Enviar value=Enviar&gt;&lt;/p&gt; </p>
+  <p>&lt;/form&gt; </p>
+  <li><strong>Valor numérico:</strong></li>
+  <p>type=number </p>
+  <p>min, max </p>
+  <p>value (número real) </p>
+  <p> step (=1) </p>
+  <p>&lt;input type=number min=0 max=100 step=20 value=50 name=valor&gt;</p>
+  <li><strong>Casilla de verificación:</strong></li>
+  <p>type=checkbox </p>
+  <p>name </p>
+  <p>value (=on) </p>
+  <p>checked </p>
+  <p>&lt;input type=checkbox name=c1 checked&gt; </p>
+  <p>&lt;input type=checkbox name=c2&gt; </p>
+  <p>&lt;input type=checkbox name=c3&gt; </p>
+  <li><strong>Botón de opción:</strong></li>
+  <p>type=radio </p>
+  <p>name</p>
+  <p> value</p>
+  <p> checked </p>
+  <p>&lt;input type=radio name=radio value=uno checked&gt;</p>
+  <p> &lt;input type=radio name=radio value=dos&gt;</p>
+  <p> &lt;input type=radio name=radio value=tres&gt; </p>
+  <li><strong>Menú:</strong></li>
+  <p>SELECT: </p>
+  <p>– name </p>
+  <p>– size </p>
+  <p>– multiple </p>
+  <p>OPTION: </p>
+  <p>– value </p>
+  <p>– selected </p>
+  <li><strong>Ejemplo de codigo de un menu:</strong></li>
+  <p>&lt;select name=menu&gt; </p>
+  <blockquote>
+    <p>&lt;option value=uno&gt;uno&lt;/option&gt; </p>
+  </blockquote>
+  <blockquote>
+    <p>&lt;option value=dos&gt;dos&lt;/option&gt; </p>
+  </blockquote>
+  <blockquote>
+    <p>&lt;option value=tres selected&gt;tres&lt;/option&gt;</p>
+  </blockquote>
+  <blockquote>
+    <p> &lt;option value=cuatro&gt;cuatro&lt;/option&gt;</p>
+  </blockquote>
+  <p> &lt;/select&gt; </p>
+  <p>&lt;select name=menum size=3 multiple&gt; </p>
+  <blockquote>
+    <p>&lt;option selected value=uno&gt;uno&lt;/option&gt; </p>
+  </blockquote>
+  <blockquote>
+    <p>&lt;option value=dos&gt;dos&lt;/option&gt;</p>
+  </blockquote>
+  <blockquote>
+    <p> &lt;option value=tres&gt;tres&lt;/option&gt;</p>
+  </blockquote>
+  <blockquote>
+    <p> &lt;option selected value=cuatro&gt;cuatro&lt;/option&gt;</p>
+  </blockquote>
+  <blockquote>
+    <p> &lt;option value=cinco&gt;cinco&lt;/option&gt; </p>
+  </blockquote>
+  <p>&lt;/select&gt; </p>
+  <li>Ejemplo de un menú:</li>
+  <select name=menu>
+    <option value=uno>uno</option>
+    <option value=dos>dos</option>
+    <option value=tres selected>tres</option>
+    <option value=cuatro>cuatro</option>
+  </select>
+  <select name=menum size=3 multiple>
+    <option selected value=uno>uno</option>
+    <option value=dos>dos</option>
+    <option value=tres>tres</option>
+    <option selected value=cuatro>cuatro</option>
+    <option value=cinco>cinco</option>
+  </select>
+</div>
+<div class="noticia">
+  <h3>Multimedia:</h3>
+  <li><strong>Plugins:</strong></li>
+  <p>– src </p>
+  <p>– type </p>
+  <p>– parámetro_del_pluing</p>
+  <p>&lt;embed src=juego.swf quality=high&gt;</p>
+  <p><strong>IFRAME:</strong></p>
+  <p> – src </p>
+  <p>– srcdoc </p>
+  <p>– sandbox </p>
+  <p>– allowfullscreen </p>
+  <p>– width </p>
+  <p>– height</p>
+  <p>&nbsp;</p>
+  <p> &lt;iframe src=miframe.html&gt;&lt;/iframe&gt;</p>
+  <p>&nbsp;</p>
+  <p>&lt;iframe srcdoc="&lt;p&gt;Hola&lt;/p&gt;"&gt; </p>
+  <p>&lt;/iframe&gt; </p>
+  <li><strong>Audio:</strong></li>
+  <p>– src </p>
+  <p>– width </p>
+  <p>– height</p>
+  <p>&nbsp;</p>
+  <p> &lt;audio src=musica.mp3&gt;</p>
+  <p> El navegador no soporta audio </p>
+  <p>&lt;/audio&gt;</p>
+  <p>&nbsp;</p>
+  <p> – controls </p>
+  <p>– autoplay </p>
+  <p>– muted </p>
+  <p>– loop </p>
+  <p>– preload</p>
+  <p><strong>SOURCE: </strong></p>
+  <p>– src </p>
+  <p>– type </p>
+  <p><br>
+  </p>
+  <p>&lt;video controls&gt; </p>
+  <p>&lt;source src=video.mp4 type="video/mp4"&gt;</p>
+  <p> &lt;source src=video.ogv type='"video/ogg"; codecs="theora, vorbis"'&gt;</p>
+  <p> El navegador no soporta video </p>
+  <p>&lt;/video&gt; </p>
+  <p><strong>Rango de reproducción:</strong></p>
+  <p> #t=[inicio][,fin]</p>
+  <p> en segundos o horas:minutos:segundos </p>
+</div>
+		</ul>
+	</div> 

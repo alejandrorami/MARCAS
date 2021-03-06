@@ -1,0 +1,100 @@
+h2 {
+	text-align: center
+}
+
+body {
+    margin: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(226, 187, 164);
+}
+
+.noticia {
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2%;
+    margin-right: 2%;
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+}
+
+
+
+
+#cabecera {
+    vertical-align: middle;
+    padding: 10px;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 2;
+    position: relative;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+}
+
+#cabecera h1 {
+    text-align: center;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+
+#menu li {
+    display: inline;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#menu {
+    display: none;
+    text-align: center;
+    background-color: #aaaaaa;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+}
+
+#elmenu {
+    list-style: none;
+    padding: 0.5em;
+    margin-left: 0;
+    margin-top: 0;
+    visibility: hidden;
+    background-color: white;
+    border: 1px solid black;
+    transition: width 0.5s, height 0.5s;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    left: -1px;
+    
+}
+
+#elmenu a {
+    color: inherit;
+    text-transform: uppercase;
+}
+
+#elmenu li {
+    margin-top: 0.4em;
+}
+
+
+
+#titulo {
+	text-align: center
+}
+
+@media only screen and (min-width: 600px) {
+    #botonmenu {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+}
